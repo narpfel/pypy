@@ -95,6 +95,9 @@ def importhook(space, modulename, w_globals=None, w_locals=None, w_fromlist=None
     assert w_locals is w_globals
     assert level == 0
 
+    stderr = 2
+    os.write(stderr, "importing %s\n" % modulename)
+
     w_mod = check_sys_modules_w(space, modulename)
     if w_mod:
         return w_mod
