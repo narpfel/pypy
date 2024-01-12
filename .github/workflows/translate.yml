@@ -68,4 +68,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: pypy-ci-build-${{ matrix.os }}
-        path: /tmp/usession-pypy-*-runner/build/pypy-nightly.tar.bz2
+        path: /tmp/usession-*-runner/build/pypy-nightly.tar.bz2
